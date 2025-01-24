@@ -14,9 +14,13 @@ int main()
 
 	int *result = twoSumTarget(arr, size, target);
 
-	printf("twoSumTarget: ");
+	fprintf(stdout, "twoSumTarget: \n");
+	fprintf(stdout, "Arr: ");
 	printArr(arr, size);
 	printf("\n");
+	fprintf(stdout, "target: %d", target);
+	printf("\n");
+	fprintf(stdout, "result: ");
 	printArr(result, 2);
 	printf("\n");
 }
