@@ -7,6 +7,8 @@ int *twoSumTarget(int *, int, int);
 
 void printArr(int *, int);
 
+int *newArray(int);
+
 #endif
 
 
