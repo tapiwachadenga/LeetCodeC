@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <time.h>
 #include "twoSumTarget.h"
 
@@ -22,6 +23,18 @@ int main()
 	fprintf(stdout, "twoSumTarget: \n");
 	fprintf(stdout, "Arr: ");
 	printArr(arr, size);
+	printf("\n");
+	int newElement = 1 + rand() % 10;
+	// size++;
+	fprintf(stdout, "\nadd(%d)\n", newElement);
+	add(arr, size, newElement);	
+	size++;
+	printArr(arr, size);
+	printf("\n");
+	printf("\n");
+	int randValue = 1 + rand() % 11;
+	fprintf(stdout, "find(%d) = %s", randValue, find(arr, size, randValue) ? "true": "false" );
+	printf("\n");
 	printf("\n");
 	fprintf(stdout, "target: %d", target);
 	printf("\n");

@@ -1,8 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 #include <time.h>
 #include "twoSumTarget.h"
+
+bool find(int *arr, int size, int value)
+{
+	for(int i = 0; i < size; i++)
+		if( *(arr + i) == value) 
+			return true;
+	return false;
+}
+
+void add(int *arr, int size, int value)
+{
+	*(arr + size) = value;
+}
 
 void printArr(int *arr, int size)
 {
@@ -48,6 +62,6 @@ int *newArray(int size)
                 srand((unsigned) time(NULL));
                 int *arr = (int *)malloc(sizeof(int) * size);
                 for(int i = 0; i < size; i++)
-                        *(arr + i) = 1 + rand() % 25;
+                        *(arr + i) = 1 + rand() % 11;
 		return arr;
 }

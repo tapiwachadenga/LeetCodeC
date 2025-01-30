@@ -9,6 +9,10 @@ void printArr(int *, int);
 
 int *newArray(int);
 
+void add(int *, int, int);
+
+bool find(int *, int, int);
+
 #endif
 
 
