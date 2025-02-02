@@ -29,6 +29,7 @@ int main()
 	fprintf(stdout, "\nadd(%d)\n", newElement);
 	add(arr, size, newElement);	
 	size++;
+	fprintf(stdout, "Arr: ");
 	printArr(arr, size);
 	printf("\n");
 	printf("\n");
